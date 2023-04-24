@@ -61,6 +61,37 @@
 		<div class="row">
 			<div class="col-md-3">
 				<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+            		<source src="files/paper/23-recycle-diffusion/teaser.mp4" type="video/mp4">
+        		</video>
+			</div>
+			<div class="col-md-9">
+			<b><font color="black">Reduce, Reuse, Recycle: Compositional Generation with Energy-Based Diffusion Models</font></b><br>
+			<a href="https://yilundu.github.io/" target="_blank">Yilun Du</a>,
+            <a href="https://conormdurkan.github.io/">Conor Durkan</a>,
+            <a href="https://rstrudel.github.io/">Robin Strudel</a>,
+            <a href="http://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>,
+            <a href="https://benanne.github.io/about/">Sander Dieleman</a>,
+            <a href="https://scholar.google.com/citations?user=GgQ9GEkAAAAJ&hl=en">Rob Fergus</a>,
+            <a href="http://www.sohldickstein.com/">Jascha Sohl-Dickstein</a>,
+            <a href="https://www.stats.ox.ac.uk/~doucet/">Arnaud Doucet</a>,
+            <a href="http://www.cs.toronto.edu/~wgrathwohl/">Will Grathwohl</a>
+            <br>
+			<b><a href="https://icml.cc/Conferences/2023/CallForPapers" target="_blank">ICML 2023</a></b> <br>
+			<a href="https://energy-based-model.github.io/reduce-reuse-recycle/" target="_blank"> <small>[Project]</small></a>
+			<a href="https://arxiv.org/abs/2302.11552"> <small>[Paper]</small></a>
+			<a href="https://colab.research.google.com/drive/1jvlzWMc6oo-TH1fYMl6hsOYfrcQj2rEs?usp=sharing"> <small>[Colab]</small></a>
+			<a href="https://github.com/yilundu/reduce_reuse_recycle"> <small>[Code]</small></a>
+			</div>
+			<div class="col-md-12">
+			<br>
+			<p> Since their introduction, diffusion models have quickly become the prevailing approach to generative modeling in many domains. They can be interpreted as learning the gradients of a time-varying sequence of log-probability density functions. This interpretation has motivated classifier-based and classifier-free guidance as methods for post-hoc control of diffusion models. In this work, we build upon these ideas using the score-based interpretation of diffusion models, and explore alternative ways to condition, modify, and reuse diffusion models for tasks involving compositional generation and guidance. In particular, we investigate why certain types of composition fail using current techniques and present a number of solutions. We conclude that the sampler (not the model) is responsible for this failure and propose new samplers, inspired by MCMC, which enable successful compositional generation. Further, we propose an energy-based parameterization of diffusion models which enables the use of new compositional operators and more sophisticated, Metropolis-corrected samplers. Intriguingly we find these samplers lead to notable improvements in compositional generation across a wide set of problems such as classifier-guided ImageNet modeling and compositional text-to-image generation.  </p>
+			</div>
+
+		</div><hr>
+
+		<div class="row">
+			<div class="col-md-3">
+				<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
             		<source src="files/paper/22-compose-pretrain/teaser-2.mp4" type="video/mp4">
         		</video>
 			</div>
@@ -74,7 +105,7 @@
 			<br>
 			(*equal contribution. Shuang Li did experiments on image generation, video question answering, and mathematical reasoning. Yilun Du did all the experiments on robot manipulation.)
             <br>
-			<b><a target="_blank">arXiv Preprint</a></b> <br>
+			<b><a href="https://iclr.cc/Conferences/2023" target="_blank">ICLR 2023</a></b> <br>
 			<a href="https://energy-based-model.github.io/composing-pretrained-models/" target="_blank"> <small>[Project]</small></a>
 			<a href="https://arxiv.org/abs/2210.11522" target="_blank"> <small>[Paper]</small></a>
 			</div>

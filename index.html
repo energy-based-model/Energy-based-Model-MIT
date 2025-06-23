@@ -58,6 +58,28 @@
 
 		<div class="row">
 			<div class="col-md-3">
+				<img class="img-fluid img-rounded" src="files/paper/25-inverse/comp_igm.png" style="border:1px solid black" alt="">
+			</div>
+			<div class="col-md-9">
+			<b><font color="black">Compositional Scene Understanding through Inverse Generative Modeling</font></b><br>
+			<a href="https://ywangattud.github.io/website/">Yanbo Wang</a>,
+			<a href="https://scholar.google.com/citations?user=dboVuDYAAAAJ&hl=en">Justin Dauwels</a>
+            <a href="https://yilundu.github.io/">Yilun Du</a>,
+            <br>
+			<b><a href="https://icml.cc/" target="_blank">ICML 2025</a></b> <br>
+			<a href="https://energy-based-model.github.io/compositional-inference/" target="_blank"> <small>[Project]</small></a>
+			<a href="https://arxiv.org/abs/2505.21780"> <small>[Paper]</small></a>
+			<a href="https://github.com/YWangatTUD/compositional-scene-understanding"> <small>[Code]</small></a>
+			</div>
+			<div class="col-md-12">
+			<br>
+				<p> We explore how generative models can be used not only to synthesize visual content but also to understand the properties of a scene given a natural image. We formulate scene understanding as an inverse generative modeling problem, where we seek to find conditional parameters of a visual generative model to best fit a given natural image. To enable this procedure to infer scene structure from images substantially different than those seen during training, we further propose to build this visual generative model compositionally from smaller models over pieces of a scene. We illustrate how this procedure enables us to infer the set of objects in a scene, enabling robust generalization to new test scenes with an increased number of objects of new shapes. We further illustrate how this enables us to infer global scene factors, likewise enabling robust generalization to new scenes. Finally, we illustrate how this approach can be directly applied to existing pretrained text-to-image generative models for zero-shot multi-object perception. </p>
+			</div>
+
+		</div><hr>
+
+		<div class="row">
+			<div class="col-md-3">
 				<img class="img-fluid img-rounded" src="files/paper/24-ired/ired.gif" style="border:1px solid black" alt="">
         		</video>
 			</div>
@@ -100,6 +122,30 @@
 			<div class="col-md-12">
 			<br>
 				<p> Given an image of a natural scene, we are able to quickly decompose it into a set of components such as objects, lighting, shadows, and foreground. We can then envision a scene where we combine certain components with those from other images, for instance a set of objects from our bedroom and animals from a zoo under the lighting conditions of a forest, even if we have never encountered such a scene before. In this paper, we present a method to decompose an image into such compositional components. Our approach, Decomp Diffusion, is an unsupervised method which, when given a single image, infers a set of different components in the image, each represented by a diffusion model. We demonstrate how components can capture different factors of the scene, ranging from global scene descriptors like shadows or facial expression to local scene descriptors like constituent objects. We further illustrate how inferred factors can be flexibly composed, even with factors inferred from other models, to generate a variety of scenes sharply different than those seen in training time.  </p>
+			</div>
+
+		</div><hr>
+		<div class="row">
+			<div class="col-md-3">
+				<img class="img-fluid img-rounded" src="files/paper/24-potential/potential.png" style="border:1px solid black" alt="">
+        		</video>
+			</div>
+			<div class="col-md-9">
+			<b><font color="black">Potential Based Diffusion Motion Planning</font></b><br>
+            <a href="https://devinluo27.github.io/">Yunhao Luo</a>,
+            <a href="https://chensun.me/">Chen Sun</a>,
+            <a href="http://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>,
+            <a href="https://yilundu.github.io/">Yilun Du</a>
+            <br>
+			<b><a href="https://icml.cc/" target="_blank">ICML 2024</a></b> <br>
+			<a href="https://energy-based-model.github.io/potential-motion-plan/" target="_blank"> <small>[Project]</small></a>
+			<a href="https://arxiv.org/pdf/2407.06169"> <small>[Paper]</small></a>
+			<a href="https://github.com/devinluo27/potential-motion-plan-release"> <small>[Code]</small></a>
+			<a href="https://colab.research.google.com/drive/1pARD89PfSzF3Ml6virZjztEJKWhXVkBY?usp=sharing"> <small>[Colab]</small></a>
+			</div>
+			<div class="col-md-12">
+			<br>
+				<p> Effective motion planning in high dimensional spaces is a long-standing open problem in robotics. One class of traditional motion planning algorithms corresponds to potential-based motion planning. An advantage of potential based motion planning is composability– different motion constraints can be easily combined by adding corresponding potentials. However, constructing motion paths from potentials requires solving a global optimization across configuration space potential landscape, which is often prone to local minima. We propose a new approach towards learning potential based motion planning, where we train a neural network to capture and learn an easily optimizable potentials over motion planning trajectories. We illustrate the effectiveness of such approach, significantly outperforming both classical and recent learned motion planning approaches and avoiding issues with local minima. We further illustrate its inherent composability, enabling us to generalize to a multitude of different motion constraints.  </p>
 			</div>
 
 		</div><hr>

@@ -23,7 +23,7 @@
   <script src="js/scroll.js"></script>
 </head>
 
-<title>Energy-based Models</title>
+<title>Energy-Based Models</title>
 
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
@@ -55,6 +55,39 @@
 
 
 		<div id="pubs"></div>
+
+		<div class="row">
+			<div class="col-md-3">
+				<img class="img-fluid img-rounded" src="files/paper/25-ebt/ebt.png" style="border:1px solid black" alt="">
+			</div>
+			<div class="col-md-9">
+			<b><font color="black">Energy-Based Transformers are Scalable Learners and Thinkers</font></b><br>
+			<a href="https://alexiglad.github.io/">Alexi Gladstone</a>,
+			<a href="https://nanduruganesh.github.io/">Ganesh Nanduru</a>,
+			<a href="https://mmiakashs.github.io/">Md Mofijul Islam</a>,
+			<a href="https://hanpx20.github.io/">Peixuan Han</a>,
+			<a href="https://hyeonjeongha.github.io/">Hyeonjeong Ha</a>,
+			<a href="https://aman.info/">Aman Chadha</a>,
+            <a href="https://yilundu.github.io/">Yilun Du</a>,
+            <a href="https://blender.cs.illinois.edu/hengji.html">Heng Ji</a>,
+            <a href="https://jundongli.github.io/">Jundong Li</a>,
+            <a href="https://www.tiqbal.com/">Tariq Iqbal</a>
+            <br>
+			<b><a href="" target="_blank">arXiv Preprint</a></b> <br>
+			<a href="https://energy-based-transformers.github.io/" target="_blank"> <small>[Project]</small></a>
+			<a href="https://arxiv.org/abs/2507.02092"> <small>[Paper]</small></a>
+			<a href="https://alexiglad.github.io/blog/2025/ebt/"> <small>[Blog]</small></a>
+			<a href="https://github.com/alexiglad/EBT"> <small>[Code]</small></a>
+			</div>
+			<div class="col-md-12">
+			<br>
+				<p> Inference-time computation techniques, analogous to human System 2 Thinking, have recently become popular for improving model performances. However, most existing approaches suffer from several limitations: they are modality-specific (e.g., working only in text), problem-specific (e.g., verifiable domains like math and coding), or require additional supervision/training on top of unsupervised
+pretraining (e.g., verifiers or verifiable rewards). In this paper, we ask the question “Is it possible to generalize these System 2 Thinking approaches, and develop models that learn to think solely from unsupervised learning?” Interestingly, we find the answer is yes, by learning to explicitly verify the compatibility between inputs and candidate-predictions, and then re-framing prediction problems as optimization
+with respect to this verifier. Specifically, we train Energy-Based Transformers (EBTs)—a new class of Energy-Based Models (EBMs)—to assign an energy (unnormalized probability) value to every input and candidate-prediction pair, enabling predictions through gradient descent-based energy minimization until convergence. This formulation enables System 2 Thinking to emerge from unsupervised learning, making it modality and problem agnostic. Across both discrete (text) and continuous (visual) modalities, we find EBTs scale faster than the dominant Transformer++ approach during training, achieving an up to 35% higher scaling rate with respect to data, batch size, parameters, FLOPs, and depth. During inference, EBTs improve performance with System 2 Thinking (i.e., extra computation) by 29%
+more than the Transformer++ on language tasks, and EBTs outperform Diffusion Transformers on image denoising while using fewer forward passes. Further, we find that System 2 Thinking with EBTs yields larger performance improvements on data that is farther out-of-distribution, and that EBTs achieve better results than existing models on most downstream tasks given the same or worse pretraining performance, suggesting that EBTs generalize better than existing approaches. Consequently, EBTs are a promising new paradigm for scaling both the learning and thinking capabilities of models. </p>
+			</div>
+
+		</div><hr>
 
 		<div class="row">
 			<div class="col-md-3">
@@ -590,7 +623,7 @@
 		<hr>
 		<center>
 			<footer>
-				<p>&copy; Massachusetts Institute of Technology 2022</p>
+				<p>&copy; Massachusetts Institute of Technology 2025</p>
 			</footer>
 		</center>
 	</div>
